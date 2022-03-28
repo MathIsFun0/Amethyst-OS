@@ -12,8 +12,18 @@
 #[no_mangle]
 pub extern "win64" fn efi_main(image_handle: efi::ffi::EFI_HANDLE, sys_table : *const efi::ffi::EFI_SYSTEM_TABLE) -> isize {
     efi::init_env(image_handle, sys_table); // Call to init_env must be the first thing in efi_main. Without it things like println!() won't work
-
-    println!("Welcome to UEFI");
+    //efi::console::Console::set_fore_color(efi::console::ForeColor.LightMagenta);
+    //efi::console::Console::set_back_color(efi::console::BackColor.Magenta);
+    //^ Can't get these two lines to work. I probably have to initialize console first.
+    println!("
+    ___                   __  __               __ 
+   /   |  ____ ___  ___  / /_/ /_  __  _______/ /_
+  / /| | / __ `__ \\/ _ \\/ __/ __ \\/ / / / ___/ __/
+ / ___ |/ / / / / /  __/ /_/ / / / /_/ (__  ) /_  
+/_/  |_/_/ /_/ /_/\\___/\\__/_/ /_/\\__, /____/\\__/  
+                                /____/            
+Amethyst OS ©2022 Alpha v0.0.1\r\n
+"); //some double backslashes here but besides that it's just text art
 
     // Your business logic here
 
