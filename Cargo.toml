@@ -6,7 +6,7 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-efi = "0.2"
+efi = {git = "https://github.com/gurry/efi", branch = "master"}
 
 [profile.dev]
 panic = "abort"
