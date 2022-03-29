@@ -21,13 +21,12 @@ pub extern "win64" fn efi_main(image_handle: efi::ffi::EFI_HANDLE, sys_table : *
   / /| | / __ `__ \\/ _ \\/ __/ __ \\/ / / / ___/ __/
  / ___ |/ / / / / /  __/ /_/ / / / /_/ (__  ) /_  
 /_/  |_/_/ /_/ /_/\\___/\\__/_/ /_/\\__, /____/\\__/  
-                                /____/            
-Amethyst OS ©2022 Alpha v0.0.1\r\n
+                                /____/     
+Alpha v0.0.1 Patch 1       
 "); //some double backslashes here but besides that it's just text art
 
     // Your business logic here
-
-    0
+    loop{}
 }
 
 // A handler to respond to panics in the code. Required by the Rust compiler
