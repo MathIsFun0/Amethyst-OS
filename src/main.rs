@@ -22,7 +22,7 @@ pub extern "win64" fn efi_main(image_handle: efi::ffi::EFI_HANDLE, sys_table : *
  / ___ |/ / / / / /  __/ /_/ / / / /_/ (__  ) /_  
 /_/  |_/_/ /_/ /_/\\___/\\__/_/ /_/\\__, /____/\\__/  
                                 /____/     
-Alpha v0.0.1 Patch 1       
+Alpha v0.0.1 Patch 2       
 "); //some double backslashes here but besides that it's just text art
 
     // Your business logic here
